@@ -1,5 +1,18 @@
 # PDFを扱うノートブック
 
+## exeファイルを作成しました！
+* pyinstallerで、pdf_controler.pyをexeファイルに変更しました！
+  * word2pdfは内部でwordを呼び出しているため、pyinstaller対象外です。
+  * その代わりに、word2pdf.xlsmというマクロ付きエクセルファイルをdistのフォルダに入れました。
+
+* 使い方
+  * word2pdf.xlsmからwordファイルをpdfに変換
+  * pdf_controler.exeで、pdfファイルを結合
+
+
+--- 
+### 旧データ
+
 * できること
   * WordをPDFに出力します。
   * PDFを結合します。

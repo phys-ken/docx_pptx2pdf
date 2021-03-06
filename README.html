@@ -366,6 +366,25 @@ code {
     });
   </script>
 <h1 id="pdf%E3%82%92%E6%89%B1%E3%81%86%E3%83%8E%E3%83%BC%E3%83%88%E3%83%96%E3%83%83%E3%82%AF">PDFを扱うノートブック</h1>
+<h2 id="exe%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F">exeファイルを作成しました！</h2>
+<ul>
+<li>
+<p>pyinstallerで、pdf_controler.pyをexeファイルに変更しました！</p>
+<ul>
+<li>word2pdfは内部でwordを呼び出しているため、pyinstaller対象外です。</li>
+<li>その代わりに、word2pdf.xlsmというマクロ付きエクセルファイルをdistのフォルダに入れました。</li>
+</ul>
+</li>
+<li>
+<p>使い方</p>
+<ul>
+<li>word2pdf.xlsmからwordファイルをpdfに変換</li>
+<li>pdf_controler.exeで、pdfファイルを結合</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%E6%97%A7%E3%83%87%E3%83%BC%E3%82%BF">旧データ</h3>
 <ul>
 <li>
 <p>できること</p>
