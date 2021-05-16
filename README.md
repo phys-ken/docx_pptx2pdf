@@ -10,6 +10,19 @@
   * pdf_controler.exeで、pdfファイルを結合
 
 
+### メモ
+```
+pip install pypdf2
+```
+
+だと、パスが通らないので、
+
+```
+pip3.9 install pupdf2
+```
+
+でインストールする必要あり
+
 --- 
 ### 旧データ
 
