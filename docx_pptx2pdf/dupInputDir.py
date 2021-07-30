@@ -140,17 +140,20 @@ for curDir, dirs, files in os.walk(inputDir):
         outputDir = "outputf\\" + curDir + "\\" + dir
         print(curDir + "\\" + dir + "__の中身を処理中...")
 
-        os.makedirs(outputDir, exist_ok=True)
-        convert_pdf(curDir + "\\" + dir, outputDir)
+        try : 
+          os.makedirs(outputDir, exist_ok=True)
+          convert_pdf(curDir + "\\" + dir, outputDir)
 
-        os.makedirs(outputDir + "\\slids", exist_ok=True)
-        merge_pdf_in_dir(outputDir, outputDir + "\_Marge.pdf")
+          os.makedirs(outputDir + "\\slids", exist_ok=True)
+          merge_pdf_in_dir(outputDir, outputDir + "\_Marge.pdf")
 
-        getpptx = glob.glob(os.path.join(curDir + "\\" + dir, '*.pptx'))
-        print(getpptx)
-        if len(getpptx) >= 1 :
-          pptx2pdf(curDir + "\\" + dir,outputDir + "\\slids" )
-          merge_pdf_in_dir(outputDir + "\\slids", outputDir + "\\slids" + "\_Marge.pdf")
+          getpptx = glob.glob(os.path.join(curDir + "\\" + dir, '*.pptx'))
+          print(getpptx)
+          if len(getpptx) >= 1 :
+            pptx2pdf(curDir + "\\" + dir,outputDir + "\\slids" )
+            merge_pdf_in_dir(outputDir + "\\slids", outputDir + "\\slids" + "\_Marge.pdf")
+        except:
+          print("nannjakorya?????????????????????????????????????")
 
 
 print("処理が終了しました。")
