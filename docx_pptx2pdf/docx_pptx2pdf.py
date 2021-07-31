@@ -1,3 +1,12 @@
+
+#/////////////////////////////////////
+# inputfの中の、docxファイルとpptxファイルをpdfに変換します。
+# inputfのフォルダ構造を、そのまま複製してoutputfに作成します。
+# Windowsでしか動きません。
+# comtype と pypdf2 と docx2pdf を、pip でインストールしておいてください。
+#
+#////////////////////////////////////
+
 import shutil
 import os
 import PyPDF2
